@@ -22,6 +22,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = 'auto'
 vim.opt.colorcolumn = '80'
 
-vim.g.netrw_winsize = 25
-vim.g.netrw_preview = 1
-vim.g.netrw_altv = 0 -- 0 => left, 1 => right
+vim.g.loaded_netrwPlugin = 1
+-- vim.g.netrw_winsize = 25
+-- vim.g.netrw_preview = 1
+-- vim.g.netrw_altv = 0 -- 0 => left, 1 => right

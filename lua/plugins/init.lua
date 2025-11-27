@@ -11,5 +11,7 @@ require('plugins.fzf-lua')
 require('plugins.undotree')
 
 require('plugins.mini-surround')
+
+require('plugins.yazi')
 -- disable debugger until we need it
 -- require('nvim-dap')

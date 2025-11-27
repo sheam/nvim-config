@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Lex)
--- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Yazi)
+-- vim.keymap.set("n", "<leader>cw", "<cmd>Yazi cwd<cr>")
+-- vim.keymap.set("<c-up>", "<cmd>Yazi toggle<cr>")
 
 -- move lines up and down
 vim.keymap.set('v', 'J', ":m '>+1<cr>gv=gv")
