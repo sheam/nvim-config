@@ -35,6 +35,18 @@ vim.keymap.set('n', '<s-f2>', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
+-- diagnostic
+vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist)
+vim.keymap.set('n', '<leader>ee', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>ej', function()
+	vim.diagnostic.goto_next()
+	vim.cmd("normal! zz")
+end, { desc = "next diagnostic error" })
+vim.keymap.set('n', '<leader>ek', function()
+	vim.diagnostic.goto_prev()
+	vim.cmd("normal! zz")
+end, { desc = "previous diagnostic error" })
+
 -- replace word under the cursor
 vim.keymap.set('n', '<leader>s', ':%s,\\<<c-r><c-w>\\>,<c-r><c-w>,gI<left><left><left>')
 
