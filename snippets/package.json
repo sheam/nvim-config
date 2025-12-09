@@ -1,0 +1,31 @@
+{
+	"comment": "see: https://github.com/chrisgrieser/nvim-scissors?tab=readme-ov-file#cookbook--faq",
+	"schema": "https://code.visualstudio.com/docs/editing/userdefinedsnippets",
+	"name": "my-custom-snippets",
+	"contributes": [
+		{
+			"defaults": "https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/go.json",
+			"language": "go",
+			"path": "./go.json"
+		},
+		{
+			"defaults": "https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/javascript/typescript.json",
+			"language": "typescript",
+			"path": "./typescript.json"
+		},
+		{
+			"defaults": "https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/javascript/react-ts.json",
+			"language": "typescriptreact",
+			"path": "./tsx.json"
+		},
+		{
+			"defaults": "https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/cpp/cpp.json",
+			"language": "cpp.json",
+			"path": "./cpp.json"
+		},
+		{
+			"language": "all",
+			"path": "./all.json"
+		}
+	]
+}

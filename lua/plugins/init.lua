@@ -13,5 +13,11 @@ require('plugins.undotree')
 require('plugins.mini-surround')
 
 require('plugins.yazi')
+
+require('plugins.friendly-snippets')
+
+require('plugins.blink')
+
+-- require('plugins.luasnip')
 -- disable debugger until we need it
 -- require('nvim-dap')

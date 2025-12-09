@@ -1,0 +1,10 @@
+{
+	"snippet": {
+		"prefix": "snippet",
+		"description": "This is a placeholder",
+		"body": [
+			"// edit the go.json file in ~/.config/nvim/snippets/ to create custom snippets",
+			"// see https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/go.json to view the built in snippets"
+		]
+	}
+}

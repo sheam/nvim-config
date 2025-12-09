@@ -10,6 +10,9 @@ vim.keymap.set('v', 'K', ":m '<-2<cr>gv=gv")
 -- don't move cursor when joinging lines
 vim.keymap.set('n', 'J', "mzJ`z")
 
+-- movement
+vim.keymap.set('i', '<C-l>', "<Right>", {desc="move right while still in insert mode"})
+
 -- page navigation, keep cursor in middle
 vim.keymap.set('n', '<c-d>', "<c-d>zz")
 vim.keymap.set('n', '<c-u>', "<c-u>zz")
@@ -19,7 +22,8 @@ vim.keymap.set('n', 'n', "nzzzv")
 vim.keymap.set('n', 'N', "Nzzzv")
 
 -- copy paste
-vim.keymap.set('x', '<leader>p', '"_dP')
+vim.keymap.set('x', '<leader>p', '"_dP', { desc = "paste over selection without losing clipboard contents" })
+vim.keymap.set('n', '<leader>p', '"+p', { desc = "Paste from clipboard" })
 vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
@@ -36,16 +40,28 @@ vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
 -- diagnostic
-vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist)
 vim.keymap.set('n', '<leader>ee', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist)
 vim.keymap.set('n', '<leader>ej', function()
-	vim.diagnostic.goto_next()
-	vim.cmd("normal! zz")
-end, { desc = "next diagnostic error" })
+		vim.diagnostic.goto_next()
+		vim.cmd("normal! zz")
+	end, { desc = "next diagnostic error" })
 vim.keymap.set('n', '<leader>ek', function()
-	vim.diagnostic.goto_prev()
-	vim.cmd("normal! zz")
+vim.diagnostic.goto_prev()
+vim.cmd("normal! zz")
 end, { desc = "previous diagnostic error" })
+
+-- LSP
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "References" })
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
+vim.keymap.set("n", "<leader>lr", ":LspRestart<CR>", { desc = "Restart LSP" })
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "format file" })
+
+-- buffers
+vim.keymap.set("n", "<leader>t", ":bp<CR>", { desc = "previous buffer" })
+vim.keymap.set("n", "<leader>tt", ":bn<CR>", { desc = "previous buffer" })
 
 -- replace word under the cursor
 vim.keymap.set('n', '<leader>s', ':%s,\\<<c-r><c-w>\\>,<c-r><c-w>,gI<left><left><left>')
