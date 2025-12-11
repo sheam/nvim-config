@@ -6,5 +6,10 @@
 			"// edit the go.json file in ~/.config/nvim/snippets/ to create custom snippets",
 			"// see https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/go.json to view the built in snippets"
 		]
+	},
+	"if err != nill, panic": {
+		"prefix": "irp",
+		"body": "if err != nil {\n\tpanic(err)\n}",
+		"description": "If error, then panic"
 	}
 }
