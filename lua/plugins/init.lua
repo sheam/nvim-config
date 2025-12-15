@@ -18,6 +18,7 @@ require('plugins.friendly-snippets')
 
 require('plugins.blink')
 
+require('plugins.go-nvim')
 -- require('plugins.luasnip')
 -- disable debugger until we need it
 -- require('nvim-dap')

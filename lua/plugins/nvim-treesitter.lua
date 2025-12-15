@@ -12,6 +12,8 @@ require('nvim-treesitter.configs').setup {
           "python",
           "json",
           "vimdoc",
+					"go",
+					"gotmpl",
         },
 	sync_install = false,
 	

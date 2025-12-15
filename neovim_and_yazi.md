@@ -58,6 +58,9 @@ Install the following binaries to maximize features:
 - apt install rustup
 - follow [manual build/installation instructions](https://yazi-rs.github.io/docs/installation#source) because there is not apt repo.
 
+### LazyGit
+- go install github.com/jesseduffield/lazygit@latest
+
 ### DAP
 - debugger adapter, allowing you to launch debugger in nvim
 - set breakpoints? shortcuts, etc.
