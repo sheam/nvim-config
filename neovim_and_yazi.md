@@ -27,6 +27,7 @@ A list of things to try and remember about vim.
 - [d              -> jump to previous diagnostic in the current buffer
 - ]d              -> jump to next diagnostic in the current buffer
 - ctrl-w + d      -> show error/warning message in the line under the cursor
+- npm install --prefix ~/.local prettier prettier-plugin-go-template
 
 ## Plugins
 

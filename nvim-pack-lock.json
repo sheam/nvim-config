@@ -14,6 +14,10 @@
       "src": "https://github.com/Saghen/blink.pairs",
       "version": ">=0.0.0"
     },
+    "conform.nvim": {
+      "rev": "9b8fa5e0b78168f68bee9bf886dc20f287c61e02",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "friendly-snippets": {
       "rev": "572f5660cf05f8cd8834e096d7b4c921ba18e175",
       "src": "https://github.com/rafamadriz/friendly-snippets"
@@ -21,6 +25,14 @@
     "fzf-lua": {
       "rev": "3170d98240266a68c2611fc63260c3ab431575aa",
       "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "go.nvim": {
+      "rev": "41a18f0c05534c375bafec7ed05cdb409c4abcc6",
+      "src": "https://github.com/ray-x/go.nvim"
+    },
+    "guihua.lua": {
+      "rev": "ef44ba40f12e56c1c9fa45967f2b4d142e4b97a0",
+      "src": "https://github.com/ray-x/guihua.lua"
     },
     "mason-lspconfig.nvim": {
       "rev": "7d527c76c43f46294de9c19d39c5a86317809b4b",
