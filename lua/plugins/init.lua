@@ -1,4 +1,4 @@
-require('plugins.mini-icons')
+require('plugins.mini')
 
 require('plugins.nvim-lspconfig')
 
@@ -10,13 +10,13 @@ require('plugins.fzf-lua')
 
 require('plugins.undotree')
 
-require('plugins.mini-surround')
-
 require('plugins.yazi')
 
 require('plugins.friendly-snippets')
 
 require('plugins.blink')
+
+require('plugins.conform')
 
 -- require('plugins.luasnip')
 -- disable debugger until we need it

@@ -11,14 +11,11 @@ require("blink.cmp").setup({
 	signature = { enabled = true },
 	completion = {
 		trigger = {
-			show_on_insert_on_trigger_character = true,
-		},
-		list = {
-			selection = 'auto_insert',
+			show_on_insert_on_trigger_character = false,
 		},
 		documentation = { auto_show = true, auto_show_delay_ms = 500 },
 		menu = {
-			auto_show = true,
+			auto_show = false,
 			draw = {
 				treesitter = { "lsp" },
 				columns = { { "kind_icon", "label", "label_description", gap = 1 }, { "kind" } },
