@@ -1,9 +1,9 @@
 -- In your init.lua or a dedicated plugin configuration file
 vim.pack.add({
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("*") },
+	"https://github.com/saghen/blink.download", -- Downloads prebuilt binaries for blink plugins
 	{ src = "https://github.com/Saghen/blink.pairs", version = vim.version.range("*") },
-	-- 'https://github.com/Saghen/blink.pairs',
-	"https://github.com/saghen/blink.indent", -- Example for blink.indent
+	"https://github.com/saghen/blink.indent",
 })
 
 -- Later in your configuration, you would set up the individual blink modules
