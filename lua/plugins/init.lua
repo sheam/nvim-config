@@ -18,6 +18,8 @@ require('plugins.blink')
 
 require('plugins.conform')
 
+require('plugins.which-key')
+
 -- require('plugins.luasnip')
 -- disable debugger until we need it
 -- require('nvim-dap')
